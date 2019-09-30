@@ -49,7 +49,7 @@ for row in data:
                     else:
                         print("This is not insane bms(over 26)")
                         continue
-                parameter = [row[0], h1, insane]
+                parameter = [row[0], h1, insane, hantei]
                 score.append(parameter)
 
             else:
