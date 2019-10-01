@@ -4,14 +4,13 @@ from bs4 import BeautifulSoup as bp
 import csv
 from datetime import datetime
 now = datetime.now()
-score = [["ハッシュ", "タイトル", "難易度"]]
 num = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 sc = ["None","F", "E", "D", "C", "B", "A", "AA", "AAA"]
 cl = ["Null","Failed", "Easy", "Clear", "Hard", "FC"]
 
 
 i = 0
-
+score = []
 cnt = 0
 data = pd.read_csv("score.csv").values.tolist()
 for row in data:
