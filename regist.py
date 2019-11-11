@@ -6,7 +6,7 @@ import sqlite3 as sql
 now = datetime.now()
 print(now)
 
-database = 'O4RO.db'
+database = '.db'
 
 score = [[ "タイトル(差分名)", "発狂難易度", "判定ランク", "クリアタイプ", "スコアランク", "EXスコア", "perfect", "great", "good", "bad", "poor", "maxcombo", "最小BP", "プレイ回数", "スコアレート"]]
 num = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -52,7 +52,7 @@ for row in score:
         cnt += 1
         continue
     row.pop(0)
-with open('score_5.csv', 'w', newline="") as f:
+with open('score.csv', 'w', newline="") as f:
     writer = csv.writer(f)
     writer.writerows(score)
 
@@ -60,4 +60,4 @@ now1 = datetime.now()
 delta = now1 - now
 delta1 = str(delta)
 delta2 = delta1[:-7]
-print("経過時間は"+delta2+"でした")
+#print("経過時間は"+delta2+"でした")
