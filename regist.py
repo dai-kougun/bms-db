@@ -7,7 +7,7 @@ import json
 now = datetime.now()
 print(now)
 
-database = 'mei_shisou.db'
+database = '.db'
 
 #score = [[ "タイトル(差分名)", "発狂難易度", "判定ランク", "クリアタイプ", "スコアランク", "EXスコア", "perfect", "great", "good", "bad", "poor", "maxcombo", "最小BP", "プレイ回数", "スコアレート"]]
 score = []
